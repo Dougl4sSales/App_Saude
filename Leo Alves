@@ -1,1 +1,18 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appsaudeja</title>
+</head>
+<body>
+    <h1> Locais de atendimento mais próximos: </h1>
+    <button> Início </button>
+    <button> Cadastro </button>
+    <button> Atendimento </button>
+ <p> Cidade:  </p> 
+ <p> Bairro:  </p>
+ <img src=" c:\Users\2023200391\Downloads\png-transparent-brasao-de-curitiba-coat-of-arms-flag-of-curitiba-mural-crown-history-american-flag-flag-text-logo.png" >
+ <img src="c:\Users\2023200391\Downloads\Bandeira_do_Paraná.svg.png" >
+ </body>
+</html>
