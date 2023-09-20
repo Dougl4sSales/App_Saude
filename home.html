@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <title>APP Saúde</title>    
+</head>
+
+<body>
+    <div id="header">
+        <h1>APP Saúde</h1>
+    </div>
+    <div id="container">
+        <!-- Conteúdo da sua página aqui -->
+        <div id="texto-centralizado">
+            <p>
+                A taxa de mortalidade infantil é obtida por meio dos números de crianças de um determinado local(cidade,região,pais,continente) que
+                morrem antes de completar 1 ano, a cada mil nascidas vivas. Esse dado é um aspecto de fundamental importância para avaliar a 
+                qualidade de vida, pois, por meio dele é possivel obter informações sobre a eficácia dos serviços públicos, tais como: saneamento básico,
+                sistema de saúde, disponibilidade de remédios e vacinas, acompanhamento médico, educação, maternidade, alimentação adequada, entre outros.
+            </p>
+        </div>
+    </div>
+    <div id="buttons">
+        <button class="button" id="button1">INICIO</button>
+        <button class="button" id="button2">CADASTRO</button>
+        <button class="button" id="button3">ATENDIMENTO</button>
+    </div>
+
+    <img src="img/mortalida_infantil.png" alt="Logo" id="logo">
+
+    <div id="buttons2">
+        <button class="button2" >NOTÍCIAS</button><br><br>
+        <button class="button2" >PREVENÇÃO</button><br><br>
+        <button class="button2" >VACINAS</button>
+    </div>
+
+    <img src="img/app_saude_ja.png" alt="Logo" id="logo2">
+
+    <div id="footer">
+        @appsaude
+    </div>
+
+    <!-- JavaScript para adicionar funcionalidade aos botões -->
+    <script>
+        document.getElementById("button1").addEventListener("click", function() {
+            // Ação para o botão 1
+            alert("Botão 1 clicado!");
+        });
+
+        document.getElementById("button2").addEventListener("click", function() {
+            // Ação para o botão 2
+            alert("Botão 2 clicado!");
+        });
+
+        document.getElementById("button3").addEventListener("click", function() {
+            // Ação para o botão 3
+            alert("Botão 3 clicado!");
+        });
+    </script>
+</body>
+</html>
