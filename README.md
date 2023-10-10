@@ -1,6 +1,6 @@
 # App_Saude
 
-Projeto da materia de Pratica Proffisonal.
+Projeto da materia de Pratica Profisonal.
 Objetivos do milenio
 
 ### VsCode extension
