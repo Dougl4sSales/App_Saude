@@ -37,3 +37,43 @@ body {
     position: absolute;
     bottom: 0; 
 }
+
+h2{
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
+/* Estiliza o container do formulário */
+form {
+    width: 300px; /* Define a largura do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    text-align: center; /* Centraliza o texto dentro do container */
+}
+
+/* Estilo para as etiquetas (labels) */
+label {
+    display: block; /* Faz com que cada etiqueta fique em uma linha separada */
+    text-align: left; /* Alinha o texto da etiqueta à esquerda */
+    margin-bottom: 10px; /* Adiciona um espaçamento inferior entre as etiquetas */
+}
+
+/* Estilo para as caixas de input */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Define a largura das caixas de input para 100% */
+    padding: 10px; /* Adicione um espaçamento interno para melhor aparência */
+    margin-bottom: 10px; /* Adiciona um espaçamento inferior entre as caixas de input */
+}
+
+/* Estilo para o botão de cadastro */
+input[type="button"] {
+    width: 100%; /* Define a largura do botão para 100% */
+    padding: 10px; /* Adicione um espaçamento interno para melhor aparência */
+    background-color: #007bff; /* Cor de fundo do botão */
+    margin-left: 10px;
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remova a borda do botão */
+    cursor: pointer; /* Mude o cursor ao passar o mouse sobre o botão */
+}

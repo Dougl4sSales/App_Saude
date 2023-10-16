@@ -12,46 +12,27 @@
             var senha = document.getElementById("senha").value;
             var confirmarSenha = document.getElementById("confirmarSenha").value;
     
+            // Verifique se algum campo está vazio
+            if (nome === "" || email === "" || senha === "" || confirmarSenha === "") {
+                alert("Por favor, preencha todos os campos antes de realizar o cadastro.");
+                return; // Evita a tentativa de cadastro se algum campo estiver vazio
+            }    
             // Verifique se as senhas coincidem
             if (senha !== confirmarSenha) {
                 alert("As senhas não coincidem. Por favor, tente novamente.");
                 return;
-            }
-
+            }    
             alert("Cadastro realizado com sucesso! Você pode fazer login agora.");
-            window.location.href = "home.html"; // Redirecionar para a página de login
+            window.location.href = "../home.html"; // Redirecionar para a página de login
         }
-    </script>
-
-    <style>
-        label, input, button {
-                margin-left: 40px;
-            }
-        /* Estilo para as caixas de input */
-        input[type="text"],
-        input[type="email"],
-        input[type="password"] {
-            width: 50%; /* Define a largura das caixas de input para 100% */
-            padding: 10px /* Adicione um espaçamento interno para melhor aparência */
-        }
-
-        /* Estilo para o botão de cadastro */
-        input[type="button"] {
-            width: 50%; /* Define a largura do botão para 100% */
-            padding: 10px; /* Adicione um espaçamento interno para melhor aparência */
-            background-color: #007bff; /* Cor de fundo do botão */
-            color: white; /* Cor do texto do botão */
-            border: none; /* Remova a borda do botão */
-            cursor: pointer; /* Mude o cursor ao passar o mouse sobre o botão */
-        }
-    </style>
-
+    </script>    
 </head>
 <body>
     <div id="header">
         <h1>APP Saúde</h1>
     </div>
-    <h1>Cadastro</h1>
+    <div class="centered-div">
+    <h2>Cadastro</h2>
     <form>
         <label for="nome">Nome:</label>
         <input type="text" id="nome" name="nome" required><br><br>
@@ -67,6 +48,7 @@
 
         <input type="button" value="Cadastrar" onclick="realizarCadastro()">
     </form>
+    </div>
     <div id="buttons">
         <button class="button" id="button1">INICIO</button>
         <button class="button" id="button2">CADASTRO</button>
