@@ -8,3 +8,7 @@ Instalar o Live Server no vscode
 
 ### Pagina Principal
 http://127.0.0.1:5500/home.html
+
+### Credenciais
+Nome do usuario: joao
+Senha: 1234
