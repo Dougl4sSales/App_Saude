@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/vacinas.css">
+    <title>APP Saúde</title>    
+</head>
+<body>
+    <div id="header">
+        <h1>APP Saúde</h1>
+    </div>
+    <div id="buttons">
+        <a href= "../home.html"><button class="button" id="button1">INICIO </button></a>
+        <a href= "./login.html"><button class="button" id="button1">LOGIN </button></a>
+        <a href= "./cadastro.html"><button class="button" id="button2">CADASTRO</button></a>
+        <a href= "./atendimento.html"><button class="button" id="button3">ATENDIMENTO</button></a>
+    </div>  
+    <h1>Selecione a Vacina:</h1>
+
+    <select id="opcoes">
+        <option value="" disabled selected>Selecione uma opção</option>
+        <option value="opcao1">Opção 1</option>
+        <option value="opcao2">Opção 2</option>
+        <option value="opcao3">Opção 3</option>
+    </select>
+
+    <p id="resultado"></p>
+
+    <script>
+        const select = document.getElementById("opcoes");
+        const resultado = document.getElementById("resultado");
+
+        select.addEventListener("change", function() {
+            const escolha = select.value;
+            if (escolha === "") {
+                resultado.textContent = "";
+            } else {
+                switch (escolha) {
+                    case "opcao1": // SARAMPO
+                        resultado.textContent = "O que causa? A transmissão do vírus ocorre de pessoa a pessoa, por via aérea, ao tossir, espirrar, falar ou respirar. O sarampo é tão contagioso que uma pessoa infectada pode transmitir para 90% das pessoas próximas que não estejam imunes. A transmissão pode ocorrer entre 4 dias antes e 4 dias após o aparecimento das manchas vermelhas pelo corpo.";
+                        break;
+                    case "opcao2":
+                        resultado.textContent = "Você escolheu a Opção 2. Este é o texto da Opção 2.";
+                        break;
+                    case "opcao3":
+                        resultado.textContent = "Você escolheu a Opção 3. Este é o texto da Opção 3.";
+                        break;
+                }
+            }
+        });
+    </script>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #opcoes {
+            margin: 0 auto;
+            display: block;
+        }
+
+        #resultado {
+            text-align: justify;
+        }
+
+        
+    </style>
+<div id="footer">
+    @appsaude
+</div>
+</body>
+</html>
