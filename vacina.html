@@ -11,63 +11,90 @@
         <h1>APP Saúde</h1>
     </div>
     <div id="buttons">
-        <a href= "../home.html"><button class="button" id="button1">INICIO </button></a>
-        <a href= "./login.html"><button class="button" id="button1">LOGIN </button></a>
-        <a href= "./cadastro.html"><button class="button" id="button2">CADASTRO</button></a>
-        <a href= "./atendimento.html"><button class="button" id="button3">ATENDIMENTO</button></a>
+        <a href="../home.html"><button class="button" id="button1">INICIO </button></a>
+        <a href="./login.html"><button class="button" id="button1">LOGIN </button></a>
+        <a href="./cadastro.html"><button class="button" id="button2">CADASTRO</button></a>
+        <a href="./atendimento.html"><button class="button" id="button3">ATENDIMENTO</button></a>
     </div>  
-    <h1>Selecione a Vacina:</h1>
 
-    <select id="opcoes">
-        <option value="" disabled selected>Selecione uma opção</option>
-        <option value="opcao1">Opção 1</option>
-        <option value="opcao2">Opção 2</option>
-        <option value="opcao3">Opção 3</option>
-    </select>
+    <div id="content-container">
+        <div id="image-container">
+            <!-- Adicione a imagem desejada aqui -->
+            <img src="img/vacina.svg" alt="Imagem" width="400">
+        </div>
+        
+        <div id="vacina-info">
+            <h1>Selecione a Vacina:</h1>
 
-    <p id="resultado"></p>
+            <select id="opcoes">
+                <option value="" disabled selected>Selecione uma opção</option>
+                <option value="opcao1">Opção 1</option>
+                <option value="opcao2">Opção 2</option>
+                <option value="opcao3">Opção 3</option>
+            </select>
 
-    <script>
-        const select = document.getElementById("opcoes");
-        const resultado = document.getElementById("resultado");
+            <p id="resultado"></p>
 
-        select.addEventListener("change", function() {
-            const escolha = select.value;
-            if (escolha === "") {
-                resultado.textContent = "";
-            } else {
-                switch (escolha) {
-                    case "opcao1": // SARAMPO
-                        resultado.textContent = "O que causa? A transmissão do vírus ocorre de pessoa a pessoa, por via aérea, ao tossir, espirrar, falar ou respirar. O sarampo é tão contagioso que uma pessoa infectada pode transmitir para 90% das pessoas próximas que não estejam imunes. A transmissão pode ocorrer entre 4 dias antes e 4 dias após o aparecimento das manchas vermelhas pelo corpo.";
-                        break;
-                    case "opcao2": //HEPATITE
-                        resultado.textContent = "Você escolheu a Opção 2. Este é o texto da Opção 2.";
-                        break;
-                    case "opcao3":
-                        resultado.textContent = "Você escolheu a Opção 3. Este é o texto da Opção 3.";
-                        break;
-                }
-            }
-        });
-    </script>
+            <script>
+                const select = document.getElementById("opcoes");
+                const resultado = document.getElementById("resultado");
+
+                select.addEventListener("change", function() {
+                    const escolha = select.value;
+                    if (escolha === "") {
+                        resultado.textContent = "";
+                    } else {
+                        switch (escolha) {
+                            case "opcao1": // SARAMPO
+                                resultado.textContent = "O que causa? A transmissão do vírus ocorre de pessoa a pessoa, por via aérea, ao tossir, espirrar, falar ou respirar. O sarampo é tão contagioso que uma pessoa infectada pode transmitir para 90% das pessoas próximas que não estejam imunes. A transmissão pode ocorrer entre 4 dias antes e 4 dias após o aparecimento das manchas vermelhas pelo corpo.";
+                                break;
+                            case "opcao2": // HEPATITE
+                                resultado.textContent = "O que é hepatite? A hepatite é um tipo de inflamação do fígado que pode ter diferentes causas. A hepatite pode ser causada por vírus e bactérias diversos e até mesmo pelo consumo excessivo de substâncias, como certos tipos de medicamentos e até mesmo de drogas e bebidas alcoólicas. \n\n Certas condições autoimunes também podem causar hepatite no paciente, sendo que é preciso investigar seu quadro médico de forma precisa, para indicar o tipo de tratamento mais adequado a aquele paciente.\n\n Quais são os tipos de hepatite?\n Existem diferentes tipos de hepatite, sendo que estes estão relacionados aos agentes causadores dessa inflamação no fígado.\n\n Hepatite A: A hepatite A é causada pelo vírus da hepatite A, que pode ser transmitido por via sexual, mas também pelo consumo de água e de alimentos contaminados\n\n Hepatite B: Essa hepatite é causada pelo vírus da hepatite B, transmitido de uma pessoa a outra por meio do contato com fluidos corporais, como o sêmen e a saliva. No entanto, a hepatite B também pode ser facilmente transmitida por meio do uso de objetos não esterilizados, como alicates e lâminas de barbear que são comumente utilizados em salões de beleza.\n\n Hepatite C:  A hepatite C também é causada por um vírus e tem um meio de transmissão similar ao da hepatite B.\n\n Hepatite medicamentosa: A hepatite medicamentosa é aquela causada pelo consumo excessivo de certos tipos de medicamentos que acabam por agredir o fígado, causando o processo inflamatório. Esses medicamentos podem acabar sendo, por exemplo, consumidos em sobredosagem pelo paciente, o que desencadeia a doença.\n\n Esteato-hepatite: A esteato-hepatite é causada por uma condição chamada de esteatose hepática. Trata-se de um acúmulo de gordura no fígado que pode acabar resultando em um processo de inflamação no fígado.";
+                                break;
+                            case "opcao3":
+                                resultado.textContent = "Você escolheu a Opção 3. Este é o texto da Opção 3.";
+                                break;
+                        }
+                    }
+                });
+            </script>
+        </div>
+    </div>
+
     <style>
         body {
             text-align: center;
+        }
+
+        #content-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #image-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 150px;
+            text-align: center; /* Adicionado para centralizar a imagem */
+            width: 40%;
+        }
+
+        #vacina-info {
+            margin-top: -200px;
+            width: 50%;
+            text-align: justify;
         }
 
         #opcoes {
             margin: 0 auto;
             display: block;
         }
-
-        #resultado {
-            text-align: justify;
-        }
-
-        
     </style>
-<div id="footer">
-    @appsaude
-</div>
+
+    <div id="footer">
+        @appsaude
+    </div>
 </body>
 </html>
