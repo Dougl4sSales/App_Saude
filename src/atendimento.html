@@ -78,10 +78,20 @@
         "bacacheri" : "<img src=..\\img\\bacacheri.jpg><p>Endereço: Av. Pref. Erasto Gaertner, 797 - Bacacheri, Curitiba - PR, 82510-160</><p> Horas: ⋅ Abre às 07:00 às 19:00</p><p> Telefone: (41) 3251-1029</p>"
     };
         function initialize() {
-            var selecaoCidade = document.getElementById('cidade');
-            var selecaoBairro = document.getElementById('bairros');
-            var optgroups = selecaoBairro.querySelectorAll('optgroup');
+        var selecaoCidade = document.getElementById('cidade');
+        var selecaoBairro = document.getElementById('bairros');
+        var optgroups = selecaoBairro.querySelectorAll('optgroup');
 
+        optgroups.forEach(function (optgroup) {
+            optgroup.style.display = 'none';
+        });
+
+        var selectedOptgroup = selecaoBairro.querySelector('optgroup[label="' + selecaoCidade.value + '"]');
+        selectedOptgroup.childNodes[1].selected = true;
+        selectedOptgroup.style.display = 'block';
+
+
+        selecaoCidade.addEventListener('change', function () {
             optgroups.forEach(function (optgroup) {
                 optgroup.style.display = 'none';
             });
@@ -90,28 +100,21 @@
             selectedOptgroup.childNodes[1].selected = true;
             selectedOptgroup.style.display = 'block';
 
-            selecaoCidade.addEventListener('change', function () {
-                optgroups.forEach(function (optgroup) {
-                    optgroup.style.display = 'none';
-                });
-
-                var selectedOptgroup = selecaoBairro.querySelector('optgroup[label="' + selecaoCidade.value + '"]');
-                selectedOptgroup.childNodes[1].selected = true;
-                selectedOptgroup.style.display = 'block';
-            });
             atualizarUPA();
-        }
+        });
+              
+        atualizarUPA();
+    }
 
-        function atualizarUPA() {
-            var selecaoCidade = document.getElementById('cidade');
-            var selecaoBairro = document.getElementById('bairros');
-            var selectedBairro = selecaoBairro.value;
+    function atualizarUPA() {
+        var selecaoBairro = document.getElementById('bairros');
+        var selectedBairro = selecaoBairro.value;
 
-            var upaInfoDiv = document.getElementById('upaInfo');
-            if (upaInfoPorBairro[selectedBairro]) {
-                upaInfoDiv.innerHTML = upaInfoPorBairro[selectedBairro];
-            }
-        }
+        var upaInfoDiv = document.getElementById('upaInfo');
+        if (upaInfoPorBairro[selectedBairro]) {
+            upaInfoDiv.innerHTML = upaInfoPorBairro[selectedBairro];
+        } 
+    }
     </script>
 </body>
 
