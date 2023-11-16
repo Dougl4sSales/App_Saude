@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: 18px;
     background-color: #8ad2f3; 
     margin: 0; 
     padding: 0; 
@@ -41,4 +42,11 @@ body {
     width: 100%; 
     position: absolute;
     bottom: 0; 
+}
+.imagem-prevencao {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Opcional: garante que a imagem não ultrapasse a largura da div  */
+    height: 150px ;    
 }
