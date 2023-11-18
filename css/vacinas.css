@@ -3,6 +3,7 @@ body {
     background-color: #8ad2f3; 
     margin: 0; 
     padding: 0; 
+    text-align: center;
 }
 
 #header {
@@ -36,4 +37,30 @@ body {
     width: 100%; 
     position: absolute;
     bottom: 0; 
+}
+
+#content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    text-align: center; /* Adicionado para centralizar a imagem */
+    width: 40%;
+}
+
+#vacina-info {
+    margin-top: -100px;
+    width: 50%;
+    text-align: justify;
+}
+
+#opcoes {
+    margin: 0 auto;
+    display: block;
 }

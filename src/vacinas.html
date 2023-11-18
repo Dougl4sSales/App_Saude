@@ -43,9 +43,10 @@
                     const escolha = select.value;
                     if (escolha === "") {
                         resultado.textContent = "";
-                    } else {
+                    } 
+                    else {
                         switch (escolha) {
-                            case "opcao1": //CAXUMBA
+                            case "opcao1": // CAXUMBA
                                 resultado.innerHTML = `
                                     <p><strong>O que é caxumba?</strong> A caxumba é uma infecção viral aguda e contagiosa. Pode atingir qualquer tecido glandular e nervoso do corpo humano, mas é mais comum afetar as glândulas parótidas, que produzem a saliva, ou as submandibulares e sublinguais, próximas ao ouvido. A caxumba, também conhecida como Papeira, é uma doença de distribuição universal, de alta morbidade e baixa letalidade, aparecendo sob a forma endêmica ou surtos.</p>
                                     <p>É mais comum em crianças no período escolar e em adolescentes, mas também pode afetar adultos em qualquer idade. Normalmente, a caxumba tem evolução benigna, mas em alguns raros casos pode apresentar complicações resultando em internações e até mesmo em morte.</p>
@@ -77,39 +78,6 @@
             </script>
         </div>
     </div>
-
-    <style>
-        body {
-            text-align: center;
-        }
-
-        #content-container {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 20px;
-        }
-
-        #image-container {
-            display: flex;
-            justify-content: center;
-            margin-top: 150px;
-            text-align: center; /* Adicionado para centralizar a imagem */
-            width: 40%;
-        }
-
-        #vacina-info {
-            margin-top: -100px;
-            width: 50%;
-            text-align: justify;
-        }
-
-        #opcoes {
-            margin: 0 auto;
-            display: block;
-        }
-    </style>
-
     <div id="footer">
         <a href="https://www.instagram.com/onubrasil/" class="link" target="blank">@appsaude</a>
     </div>
