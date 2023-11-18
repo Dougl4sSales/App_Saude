@@ -89,3 +89,11 @@ body {
     position: absolute;
     bottom: 0; /* Posicionar no final da página */
 }
+
+.link {
+    color:white
+}
+
+.link:hover {
+    color:rgb(0, 204, 255)
+}
