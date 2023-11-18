@@ -37,3 +37,55 @@ body {
     position: absolute;
     bottom: 0; 
 }
+
+#titulo {
+    text-align: center;
+}
+
+.buttonNoticia1 {
+    padding: 50px 200px;
+    text-decoration:none;
+    background-color: white;
+    color: black;  
+    border-radius: 5px;
+    margin: 15px;
+    width: 1770px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.buttonNoticia2{
+    padding: 50px 100px;
+    text-decoration: none;
+    background-color: white;
+    color: black;   
+    border-radius: 5px;
+    margin: 15px;
+    width: 1770px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.buttonNoticia3 {
+    padding: 50px 100px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin: 15px;
+    width: 1770px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.buttonNoticia4{
+    padding: 50px 100px;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    margin: 15px;
+    width: 1770px;
+    font-size: large;
+    cursor: pointer;
+}
